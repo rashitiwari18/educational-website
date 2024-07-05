@@ -87,3 +87,16 @@ h1{
     margin: 15px;
     font-size: 1.5rem;
 }
+.msgBox{
+    background-color:#364652 ;
+    color: #C7DBE6;
+    /* height: 10vmin; */
+    display: inline;
+    line-height: 10vmin;
+    align-self: center;
+    text-align: center;
+    padding: 0 15px 0 15px;
+    border-radius: 30px;
+    font-size: 1.5rem;
+;
+}
