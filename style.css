@@ -49,3 +49,30 @@ h1{
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
+}
+#paper{
+    background-image: url(./images/paper.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+
+}
+#scissor{
+    background-image: url(./images/scissors.png);
+    background-size :cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.scorediv{
+    height: 15vmin;
+    display:flex;
+    justify-content: center;
+    margin: 5px;
+
+}
+.you{
+
+    align-self: center;
+    text-align:center;
+    font-size: 1.5rem;
+}
