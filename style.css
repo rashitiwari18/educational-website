@@ -22,4 +22,30 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-content: center;
+}
+.outer{
+    height: 30vmin;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;}
+.choice{
+    border: 3px solid transparent;
+    background-color: white;
+    height: 20vmin;
+    width: 20vmin;
+    margin-top: 10px;
+    align-self: center;
+    margin: 15px;
+    border-radius: 50%;}
+.choice:hover{
+    cursor: pointer;
+    height: 25vmin;
+    width: 25vmin;
+    transition: .25s;
 
+}
+#rock{
+    background-image: url(./images/rock.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
