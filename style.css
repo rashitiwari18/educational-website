@@ -100,3 +100,20 @@ h1{
     font-size: 1.5rem;
 ;
 }
+@media (max-width:500px){
+    nav h1{
+        font-size: 1.75rem;
+    }
+    .main{
+        border-color: blue;
+        height: 50vh;
+    }
+    .outer{
+        height: 50vmin;
+    }
+    .scorediv{
+        height: 30vmin;
+    }
+
+    
+}
