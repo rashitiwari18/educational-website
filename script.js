@@ -26,3 +26,41 @@ const showWinner=(userWin ,userChoice,compChoice)=>{
     compScorePara.innerText=compScore;
    } 
 }
+//game condition 
+const playGame=(userChoice)=>{
+    const compChoice=genCompChoice();
+    if (userChoice===compChoice){
+        draw();
+    }
+    else{
+        let userWin=true;
+        if(userChoice==="rock"){
+            // paper scissor
+            userWin=compChoice==="paper"?false:true;
+        }else if (userChoice==="paper"){
+            //rock scissor
+            userWin=compChoice==="rock"?false:true;
+        }else{
+            //rock paper
+            userWin=compChoice==="rock"?false:true;
+        }
+        showWinner(userWin,userChoice,compChoice);
+    }
+}
+// getting user choice
+const choices=document.querySelectorAll(".choice");
+ 
+choices.forEach((choice)=>{
+    choice.addEventListener('click',()=>{
+        const userChoice=choice.getAttribute("id");
+        playGame(userChoice);
+    });
+});
+
+//random choice from computer
+const genCompChoice= ()=>{
+    const options=["rock","paper","scissor"]
+    const randomIdx=Math.floor(Math.random()*3);
+    return options[randomIdx];
+    
+}
