@@ -47,7 +47,17 @@ const playGame=(userChoice)=>{
         showWinner(userWin,userChoice,compChoice);
     }
 }
+// getting user choice
+const choices=document.querySelectorAll(".choice");
+ 
+choices.forEach((choice)=>{
+    choice.addEventListener('click',()=>{
+        const userChoice=choice.getAttribute("id");
+        playGame(userChoice);
+    });
+});
 
+//random choice from computer
 const genCompChoice= ()=>{
     const options=["rock","paper","scissor"]
     const randomIdx=Math.floor(Math.random()*3);
